@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
+    <body>
+        <% if(mySkills.length > 1) { %>
+            <h1>My Skills</h1>
+        <% } else { %>
+            <h1>My Skill</h1>
+        <% } %>
+        <ul>
+            <% for(let i = 0; i < mySkills.length; i++){ %>
+                <li>
+                    <a href="/skills/<%=i%>">
+                        <%=mySkills[i]%>
+                    </a>
+                </li>
+            <% } %>
+        </ul>
+    </body>
+</html>

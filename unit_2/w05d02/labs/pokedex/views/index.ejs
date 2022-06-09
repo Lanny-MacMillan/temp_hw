@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/app.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pokedex</h1>
+    <button onclick="window.location.href= '/pokemon/new' " type=" button" name="button">Create new Entry</button>
+
+    <ul>
+        <%for(let i =0; i < Pokemon.length; i++){%>
+                <h1><a href="/pokemon/<%=Pokemon[i].id;%>"><%=Pokemon[i].name; %></a></h1>
+                <h2><%=Pokemon[i].id%></h2>
+                <img src="<%=Pokemon[i].img;%>" alt="<%=Pokemon[i].name; %>">
+                <br><button onclick="window.location.href= '/pokemon/<%=Pokemon[i].id%>/edit'" type=" button" name="button">Edit <%=Pokemon[i].name; %></button>
+
+                <form action="/pokemon/<%=Pokemon[i].id; %>?_method=DELETE" method="POST">
+                    <input type="submit" value="Delete">
+                </form>
+                
+
+                <br>
+    <% } %>
+    </ul>
+<nav>
+
+</nav>
+</body>
+</html>

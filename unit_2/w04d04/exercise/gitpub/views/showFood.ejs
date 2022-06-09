@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Head page is now put in the head.ejs file -->
+        <%- include ('./partials/head.ejs') %>
+
+    </head>
+
+    <body>
+        <div class="body-overlay">
+            <!-- ============ HEADER ============ -->
+            <%- include ('./partials/header.ejs') %>
+            <!-- ============ MAIN ============ -->
+            <main class="show-main">
+                <h1>fooD()</h1>
+                <h2><%= food.name %></h2>
+                <img src=<%= food.image + ".png"%>>
+                <h3>$<%= food.price %></h3>
+                <a href="/pub" class="back-btn">go back</a>
+            </main>
+            <!-- ============ FOOTER ============ -->
+            <%- include ('./partials/footer.ejs') %>
+
+        </div>
+    </body>
+</html>

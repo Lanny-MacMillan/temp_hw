@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+			<h1><%=Movies.name%></h1>
+            <button onclick="window.location.href= '/movies'" type="button" class="myButton" name="button">Back Home</button>
+            <br>
+			<img src="<%=Movies.img%>" class="editImg" alt="<%=Movies.name%>">
+
+			<form action="/movies/<%=Movies.id%>/edit?_method=PUT" method="POST">
+				<input type="text" name="reviews" placeholder="Leave a review here"/>
+
+				<input type="submit" class="myButton" value="Create Review"/>
+
+	</body>
+</html>

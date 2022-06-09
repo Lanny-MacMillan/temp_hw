@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!---------------- HEAD ------------->
+    <%- include ('./partials/head.ejs') %>
+    <!----------------------------------->
+<body>
+    <%- include ('./partials/nav.ejs') %>
+    <h1>Welcome to the most important history lesson you will ever learn</h1>
+    <h3>Founded in 1773 we have been making bread for a long time..</h3>
+    <h3>Here are some of our greatest moments..</h3>
+    <%for(let i= 0; i < history.length; i++){%>
+        <li>
+            <h3><%=history[i]%></h3>
+        </li>
+    <%
+}
+%>
+
+    <img id="historyImg" src="https://britishfoodhistory.files.wordpress.com/2012/01/baking-bread.jpg" alt="dawn of bread"/>
+    <h1>Us back then</h1>
+    <img id="historyImg"src="https://cdn.awezzome.com/gallery/media/2019/06/25104738/restaurant-feature.jpg" alt="obama eating bread"/>
+    <h1>Us now</h1>
+</body>
+</html>
+© 2022 The Bread Company, Inc.

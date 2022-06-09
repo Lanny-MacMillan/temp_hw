@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Head page is now put in the head.ejs file -->
+        <%- include ('./partials/head.ejs') %>
+    </head>
+
+    <body>
+        <div class="body-overlay">
+            <!-- ============ HEADER ============ -->
+            <%- include ('./partials/header.ejs') %>
+            <!-- ============ MAIN ============ -->
+            <main>
+                <div>
+                    <h1>fooBar()</h1>
+                    <ul>
+                        <% for(let i = 0; i < drinks.length; i++) { %>
+                            <li><a href="/drinks/<%=i%>"><%= drinks[i].name %></a></li>
+                        <% } %>
+                    </ul>
+                </div>
+                <div>
+                    <h1>fooD()</h1>
+                    <ul>
+                        <% for(let i = 0; i < food.length; i++) { %>
+                            <li><a href="/food/<%=i%>"><%= food[i].name %></a></li>
+                        <% } %>
+                    </ul>
+                </div>
+            </main>
+            <!-- ============ FOOTER ============ -->
+            <%- include ('./partials/footer.ejs') %>
+            
+        </div>
+    </body>
+</html>

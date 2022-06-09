@@ -1,0 +1,10 @@
+const ourOffers = [
+    " Light as Grain ",
+    " Catcher in the 'Rye' ",
+    " French Baguettes ",
+    " Naan of your buisness",
+    " Wheatever you want ",
+    " Ahh baguette aboutit",
+]
+
+module.exports = ourOffers;

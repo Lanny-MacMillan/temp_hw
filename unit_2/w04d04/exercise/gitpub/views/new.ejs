@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Head page is now put in the head.ejs file -->
+        <%- include ('./partials/head.ejs') %>
+    </head>
+
+    <body>
+        <div class="body-overlay">
+            <!-- ============ HEADER ============ -->
+            <%- include ('./partials/header.ejs') %>
+            <!-- ============ MAIN ============ -->
+            <main class="show-main">
+                <form>
+                    <h1>git add to the menu</h1>
+                    <br />
+                    <input type="text" placeholder="name" /><br />
+                    <input type="text" placeholder="image" /><br />
+                    <input type="text" placeholder="price" /><br />
+                    <strong>what are you adding?</strong>
+                    <input type="radio" /> Drink <input type="radio" /> Food <br />
+                    <input type="submit" value="git commit" />
+                </form>
+            </main>
+            <!-- ============ FOOTER ============ -->
+            <%- include ('./partials/footer.ejs') %>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!---------------- HEAD ------------->
+    <%- include ('./partials/head.ejs') %>
+    <!----------------------------------->
+<body>
+    <%- include ('./partials/nav.ejs') %>
+    
+    <h1>Our current offerings </h1>
+    <h2>Each of our loafs are homemade to order.</h2>
+    <br>
+    <ul>
+        <%for(let i= 0; i < products.length; i++){%>
+            <li>
+                <h2><%=products[i].name%></h2>
+                    <img id="productImg" img src="<%=products[i].img%>"
+                    alt="<%=products[i].name%>">
+                    <br>
+                <br>
+            </li>
+        <% } %> 
+    </ul>
+</body>
+</html>
+© 2022 The Bread Company, Inc.

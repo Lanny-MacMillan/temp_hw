@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!---------------- HEAD ------------->
+    <%- include ('./partials/head.ejs') %>
+    <!----------------------------------->
+<body>
+        <!----------------- NAV ------------->
+        <%- include ('./partials/nav.ejs') %>
+        <!---------------------------------->
+    <h1>Staff Page</h1>
+    <h3>Get ready to rise with these upcoming loafs</h3>
+
+    <br>
+    <div id="staff">
+        <ul>
+            <%for(let i= 0; i < arrayStaff.length; i++){%>
+                        <li>
+                            <h3><%=arrayStaff[i].name%></h3>
+                                <img id="staffImg" img src="<%=arrayStaff[i].img%>"
+                                alt="<%=arrayStaff[i].name%>">
+                                <br>
+                                <%=arrayStaff[i].bio%>
+                                <br>
+                                <%=arrayStaff[i].quote%>
+                            <br>
+                            <br>
+                        </li>
+                    <%
+                }
+            %>
+        </ul>
+    </div>
+</body>
+</html>
+© 2022 The Bread Company, Inc.
+

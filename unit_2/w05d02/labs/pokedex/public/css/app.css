@@ -1,0 +1,17 @@
+body {
+    background: rgb(118, 126, 25);
+    text-align: center;
+}
+h1 {
+    color: rgb(139, 63, 63);
+    outline:1rem
+}
+a {
+    color: rgb(139, 63, 63);
+}
+ul {
+    list-style: none;
+}
+form {
+    text-align: center;
+}

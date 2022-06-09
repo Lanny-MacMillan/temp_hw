@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Budgtr</h1>
+        <h4>Bank Account Balance:
+            <%let accountBalance = 0
+            for (let i = 0; i < budget.length; i++){
+            accountBalance += budget[i].amount
+            console.log(accountBalance)
+            } %> 
+            <%=accountBalance%>
+            <% if(accountBalance <= 0) { %>
+                <style> body { background-color:red }</style>
+                <%  } if(accountBalance => 1000){ %>
+                    <style> body { background-color:rgb(0, 255, 0) }</style>
+                    <%}%>
+        </h4>
+        <button onclick="window.location.href= '/budget/new' " type=" button" name="button">Create a New Item for Budget</button>
+        <table>
+            <% for(let i = 0; i < budget.length; i++) { %>
+            <tr>
+                <td><%=budget[i].date%></td>
+                <td><a href="/budget/<%=budget[i]._id%>"><%=budget[i].name%></a></td>
+                <td>$<%=budget[i].amount%></td>
+            </tr>
+            <% } %>
+        </table>
+    </div>
+</body>
+</html>

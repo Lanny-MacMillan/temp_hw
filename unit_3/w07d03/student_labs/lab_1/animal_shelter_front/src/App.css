@@ -1,0 +1,59 @@
+body {
+  background-color: #268a16;
+}
+
+
+button, #button {
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color:#77d42a;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;
+  margin: 10px;
+}
+button:hover {
+	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+	background-color:#5cb811;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+#animalImg{
+  width: 100%;
+  max-width: 220px;
+  max-height: 300px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+section {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 70px;
+}
+#animal-div {
+  text-align: center;
+  width: 250px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  background-color: rgb(107, 80, 215);
+  opacity: .95;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+}

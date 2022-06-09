@@ -1,0 +1,128 @@
+.container {  
+    background: black;
+    height: 850px;
+    width: 1100px;
+    display: grid;
+           /* fr = fraction of the available space in the grid container */
+    grid-template-columns: 0.5fr 0.7fr 2.4fr 0.8fr 1.4fr 0.7fr 0.5fr;
+    grid-template-rows: 1.2fr 1.4fr 0.7fr 0.7fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    /* the blue blue makes the 2 divs into one container with no border */
+    /*              same with blue2 blue2 and yellow4 yellow4           */
+    "white4 Yellow Red blue blue yellow1 white"
+    "white5 white11 white10 white7 red2 blue1 white1"
+    "white6 white8 blue2 blue2 white9 yellow2 white1"
+    "white6 red3 yellow4 yellow4 white3 white3 white2"
+}
+
+.Yellow { 
+    grid-area: Yellow;
+    background: yellow;
+}
+
+.yellow1 { 
+    grid-area: yellow1;
+    background: yellow;
+}
+
+.yellow2 { 
+    grid-area: yellow2;
+    background: yellow;
+}
+
+.yellow4 { 
+    grid-area: yellow4;
+    background: yellow;
+}
+
+.Red { 
+    grid-area: Red;
+    background: red;
+}
+
+.red2 { 
+    grid-area: red2;
+    background: red;
+}
+
+.red3 { 
+    grid-area: red3;
+    background: red;
+}
+
+.blue { 
+    grid-area: blue;
+    background: blue;
+}
+
+.blue1 { 
+    grid-area: blue1;
+    background: blue;
+}
+
+.blue2 { 
+    grid-area: blue2;
+    background: blue;
+}
+
+.white { 
+    grid-area: white;
+    background: white;
+}
+
+.white1 { 
+    grid-area: white1;
+    background: white;
+}
+
+.white2 { 
+    grid-area: white2;
+    background: white;
+}
+
+.white3 { 
+    grid-area: white3;
+    background: white;
+}
+
+.white4 { 
+    grid-area: white4;
+    background: white;
+}
+
+.white5 { 
+    grid-area: white5;
+    background: white;
+}
+    
+.white6 { 
+    grid-area: white6;
+    background: white;
+}
+
+.white7 { 
+    grid-area: white7;
+    background: white;
+}
+
+.white8 { 
+    grid-area: white8;
+    background: white;
+}
+
+.white9 { 
+    grid-area: white9;
+    background: white;
+}
+
+.white10 { 
+    grid-area: white10;
+    background: white;
+}
+
+.white11 { 
+    grid-area: white11;
+    background: white;
+}

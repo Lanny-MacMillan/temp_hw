@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+p {
+    font-family: 'Limelight', cursive;
+}
+img {
+    width: 100%;
+    max-width: 520px;
+    margin: 10px;
+}
+.editImg {
+    width: 100%;
+    max-width: 320px;
+    margin: 10px;
+}
+body {
+
+    text-align: center;
+}
+h1 {
+    font-family: 'Limelight', cursive;
+    font-size: 45px;
+}
+input {
+    padding: 5px;
+}
+.myButton {
+	box-shadow: -2px 10px 23px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- more helpful info on functionality of this in server.js (line 32)  -->
+        <h1><%=budget.name%></h1>
+        <button onclick="window.location.href = '/budget'" type=" button" name="button">Return To Home</button>
+        <ul>
+            <h5>Date:</h5> 
+            <li><%=budget.date%></li>
+            <br>
+            <h5>Name:</h5> 
+            <li><%=budget.name%></li>
+            <br>
+            <h5>From:</h5> 
+            <li><%=budget.from%></li>
+            <br>
+            <h5>Amount:</h5> 
+            <li>$<%=budget.amount%></li>
+            <br>
+            <h5>Tags:</h5> 
+            <!-- cant seem to get the tags to generate on preseeded DB works on new submission-->
+            <li><%=budget.tags%></li>
+        </ul>
+    
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+  text-align: center;
+  background: grey;
+  font-family: gyparody;
+}
+#myDIV {
+  display:none;
+}
+
+.myRedButton {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.myRedButton:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.myRedButton:active {
+	position:relative;
+	top:1px;
+}
+.myBlueButton {
+	box-shadow: 3px 4px 0px 0px #28218a;
+	background:linear-gradient(to bottom, #1f25c6 5%, #3743f2 100%);
+	background-color:#1f25c6;
+	border-radius:18px;
+	border:1px solid #1f25c6;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #28218a;
+}
+.myBlueButton:hover {
+	background:linear-gradient(to bottom, #3743f2 5%, #1f25c6 100%);
+	background-color:#3743f2;
+}
+.myBlueButton:active {
+	position:relative;
+	top:1px;
+}
+.myGreenButton {
+	box-shadow: 3px 4px 0px 0px #238a21;
+	background:linear-gradient(to bottom, #1eab45 5%, #32c73c 100%);
+	background-color:#1eab45;
+	border-radius:18px;
+	border:1px solid #1eab45;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #238a21;
+}
+.myGreenButton:hover {
+	background:linear-gradient(to bottom, #32c73c 5%, #1eab45 100%);
+	background-color:#32c73c
+}
+.myGreenButton:active {
+	position:relative;
+	top:1px;
+}
+#red {
+  color: rgb(178, 26, 26);
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<div class="new-container">
+			<h1>Add a movie</h1>
+				<form action="/movies" method="POST">
+					<input type="text" name="name" placeholder="Name"/><br/>
+					<input type="text" name="img" placeholder="Image"/><br/>
+					<input type="text" name="type" placeholder="Type"/><br/>
+					<input type="text" name="director"placeholder="Director"/><br/>
+					<input type="text" name="stars" placeholder="Stars"/><br/>
+					<input type="text" name="rating" placeholder="Rating"/><br/>
+					<input type="text" name="reviews" placeholder="Reviews"/><br/>
+					<input type="checkbox" name="inStock" placeholder="In Stock"/>
+					In Stock<br>
+					<input type="submit" class="myButton" value="Create Movie"/>
+					<button onclick="window.location.href= '/movies'" type="button" class="myButton" name="button">Back Home</button>
+				</form>
+			</div>
+	</body>
+</html>

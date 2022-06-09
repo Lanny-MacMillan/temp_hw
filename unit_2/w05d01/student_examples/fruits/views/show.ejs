@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fruits Show Page</h1>
+    The <%=fruit.name %> is <%=fruit.color %>,
+    <% if(fruit.readyToEat === true) { %>
+        It is ready to eat
+    <% } else { %>
+        Fruit is not ready to eat
+    <% } %>
+    <nav>
+        <a href="/fruits">Back to Fruits</a>
+    </nav>
+</body>
+</html>

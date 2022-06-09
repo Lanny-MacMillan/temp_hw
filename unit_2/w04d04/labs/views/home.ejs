@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!---------------- HEAD ------------->
+    <%- include ('./partials/head.ejs') %>
+    <!----------------------------------->
+<body>
+    <h1>The Bread Company</h1>
+    <h3>Purveyors of fine bread</h3>
+    <!----------------- NAV ------------->
+    <%- include ('./partials/nav.ejs') %>
+    <!---------------------------------->
+    <img id= "home-img" src="./imgs/bread2.jpeg"/>
+    <h1>Here is our current list of breads</h1>
+    <% for(let i = 0; i < breads.length; i++){ %>
+        <a href="/products"<%=i%>>
+        <h2 id="homeList"><%=breads[i]%></h2>
+    </a>
+    <%  } %>
+    
+    
+    
+</body>
+</html>
+© 2022 The Bread Company, Inc.
+<a href="/contact">Contact</a>
+
+
+
+
+
+
+
+
+
+
+
+
+

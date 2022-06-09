@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Homeless Rick's Movie Emporium</h1>
+    <button onclick="window.location.href= '/new' " type=" button" 
+    class="myButton" name="button">Add New Movie to Database</button>
+<div class="indexContainer">
+    <%for(let i = 0; i < Movies.length; i++){%>
+        <div class="movieContainer">
+        <h1><a href="/Movies/<%=Movies[i].id;%>" class="myButton" ><%=Movies[i].name; %></a></h1>
+            <img src="<%=Movies[i].img%>" alt="<%=Movies[i].name%>">
+            <br>
+            <P>Director: <%=Movies[i].director%></P>
+            <P>Stars: <%=Movies[i].stars%></P>
+            <P>Type: <%=Movies[i].type%></P>
+            <form action="/movies/<%=Movies[i].id; %>?_method=DELETE" method="POST">
+                <input type="submit" class="myButton" value="Delete">
+            </form>
+        </div>
+    <%}%>
+</div>  
+</body>
+</html>

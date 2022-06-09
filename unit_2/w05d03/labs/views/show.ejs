@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1><%=Movies.name%> </h1>
+    <button onclick="window.location.href= '/movies'" type="button" class="myButton" name="button">Back Home</button>
+    <br>
+
+    <img src="<%=Movies.img%>" alt="<%=Movies.name%>">
+            <p>Type: <%=Movies.type%></p>
+            <p>Director: <%=Movies.director%></p>
+            <p>Stars: <%=Movies.stars%></p>
+            <p>Rating: <%=Movies.rating%></p>
+            <p>In Stock: <%=Movies.inStock%></p>
+            <p>Reviews: <%=Movies.reviews%></p>
+            <br>
+            <button onclick="window.location.href= '/movies/<%=Movies.id%>/edit'" type=" button" class="myButton" name="button">Add New Review</button>
+</body>
+</html>
