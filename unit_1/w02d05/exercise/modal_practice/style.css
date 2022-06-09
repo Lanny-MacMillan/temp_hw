@@ -1,0 +1,48 @@
+body {
+	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/5c/7a/93/5c7a9388fd4cb59fcbb9fedc5fa12bd3.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+#modal {
+	/*                 (r,g,b, opacity) */
+	background-color: rgba(0,0,0,0.4);
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+		z-index: 1;
+		/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+		overflow: auto;
+		/*Set this to `none` so that the modal does not show initially on page load.*/
+		display: none;
+}
+#modal-textbox {
+	background-color: white;
+	height: 350px;
+	width: 550px;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+#modal-footer {
+	text-align: right;
+}
+h1 {
+	
+		padding-bottom: 15px;
+}
+.modal-buttons {
+	padding: 14px 18px;
+	background-color: #677996;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
+	cursor: pointer;
+}

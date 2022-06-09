@@ -1,0 +1,61 @@
+body {
+	background: black;
+	color: white;
+}
+#container {
+	background: blue;
+	padding: 1 em;
+}
+.box {
+	padding: 2em;
+	background: gray;
+	margin: 1em;
+	border-radius: 5px;
+	font-size: 1em;
+	text-align: center;
+}
+@media (min)
+
+
+#box-b {
+	flex-basis: 50%;
+	flex-grow: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* background: black;
+   }
+   
+   /* styles for desktop when the browser is 600px or above */
+/* @media (min-width: 600px) {
+	body {
+	 background: thistle;
+	}
+}
+
+   /* styles for desktop when the browser is 600px or above */
+/*   @media (min-width: 700px) {
+	body {
+/* 	 background: rgb(182, 66, 182);
+	}
+} 

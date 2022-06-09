@@ -1,0 +1,40 @@
+body {
+  font-family: Verdana;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 35vw;
+  margin: 0 auto;
+}
+
+div {
+  margin-top: 5vw;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 10%;
+}
+p {
+  margin: 0;
+}
+p:hover {
+  color: #333;
+}
+.outside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: steelblue;
+  border: 1px solid black;
+}
+
+.inside {
+  background-color: #ffdb58;
+  border: 1px solid black;
+  width: 15vw;
+  height: 15vw;
+}
+
+.inside:hover {
+  opacity: 95%;
+}
