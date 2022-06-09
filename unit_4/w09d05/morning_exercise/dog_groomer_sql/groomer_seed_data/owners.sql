@@ -1,0 +1,12 @@
+INSERT INTO owners (name, groomer, dogs) VALUES ('Jeff', 4, '{1}');
+INSERT INTO owners (name, groomer, dogs) VALUES ('Brandy', 1, '{2, 3}');
+INSERT INTO owners (name, groomer, dogs) VALUES ('Javi', 2, '{4}');
+INSERT INTO owners (name, groomer, dogs) VALUES ('Owen', 4, '{5}');
+INSERT INTO owners (name, groomer, dogs) VALUES ('Hunter', 2, '{6, 7}');
+INSERT INTO owners (name, groomer, dogs) VALUES ('Nicole', 3, '{8}');
+INSERT INTO owners (name, groomer, dogs) VALUES ('Jeffery', 3, '{9}');
+INSERT INTO owners (name, groomer, dogs) VALUES ('Jake', 3, '{10}');
+INSERT INTO owners (name, groomer, dogs) VALUES ('Paul', 3, '{11}');
+INSERT INTO owners (name, groomer, dogs) VALUES ('Ahna', 5, '{12, 13}');
+INSERT INTO owners (name, groomer, dogs) VALUES ('Eileen', 5, '{14}');
+INSERT INTO owners (name, groomer, dogs) VALUES ('Paxton', 5, '{15}');

@@ -1,0 +1,15 @@
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Fido', 'Pomsky', 1, 4);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Tiny', 'Rotweiller', 2, 1);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Teensy', 'Rotweiller', 2, 1);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Champ', 'Doberman', 3, 2);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Sunshine', 'Lab', 4, 4);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Nero', 'Husky', 5, 2);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Kurt', 'Large Mix', 5, 2);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Jax', 'Large Mix', 6, 3);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Fluffy', 'Wirehaired Pointer', 7, 3);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Brutus', 'Chihuahua', 8, 3);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Jake', 'Labradoodle', 9, 3);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Connor', 'Lab', 10, 5);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Arthur', 'Basset Hound', 10, 5);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Cindy', 'Pit Bull Terrier', 11, 5);
+INSERT INTO dogs (name, breed, owner, groomer) VALUES ('Angel', 'Austrailian Shephard', 12, 5);
